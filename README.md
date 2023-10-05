@@ -1,17 +1,36 @@
 # NUS CS1101s SICP JavaScript 描述
 
-![](cover.jpg)
+## 本 fork 对原仓库进行了删减。
+
+由于原文档 404，于是仅保留 markdown 与静态文件，生成简易的在线文档。
+
+目录：
+
+1. [前言](./00.md)
+2. [前言](./01.md)
+3. [前言](./02.md)
+4. [序](./03.md)
+5. [致谢](./04.md)
+6. [第一章 用函数构建抽象](./05.md)
+7. [第二章 用数据构建抽象](./06.md)
+8. [第三章 模块性、对象和状态](./07.md)
+9. [第四章 元语言抽象](./08.md)
+10. [第五章 用挂号机计算](./09.md)
+
+以下是原仓库简介。
+
+---
 
 > 原文：[https://sicp.comp.nus.edu.sg/index.html](https://sicp.comp.nus.edu.sg/index.html)
-> 
+>
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-> 
+>
 > 如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。——David Leinweber
 
-* [在线阅读](https://sicp-js.apachecn.org)
-* [在线阅读（Gitee）](https://apachecn.gitee.io/sicp-js-zh/)
-* [ApacheCN 面试求职交流群 724187166](https://jq.qq.com/?_wv=1027&k=54ujcL3)
-* [ApacheCN 学习资源](http://www.apachecn.org/)
+- [在线阅读](https://sicp-js.apachecn.org)
+- [在线阅读（Gitee）](https://apachecn.gitee.io/sicp-js-zh/)
+- [ApacheCN 面试求职交流群 724187166](https://jq.qq.com/?_wv=1027&k=54ujcL3)
+- [ApacheCN 学习资源](http://www.apachecn.org/)
 
 ## 贡献指南
 
@@ -23,13 +42,13 @@
 
 ### 负责人
 
-* [飞龙](https://github.com/wizardforcel): 562826179
+- [飞龙](https://github.com/wizardforcel): 562826179
 
 ### 其他
 
-*   在我们的 [apachecn/sicp-js-zh](https://github.com/apachecn/sicp-js-zh) github 上提 issue.
-*   发邮件到 Email: `apachecn@163.com`.
-*   在我们的 [组织学习交流群](http://www.apachecn.org/organization/348.html) 中联系群主/管理员即可.
+- 在我们的 [apachecn/sicp-js-zh](https://github.com/apachecn/sicp-js-zh) github 上提 issue.
+- 发邮件到 Email: `apachecn@163.com`.
+- 在我们的 [组织学习交流群](http://www.apachecn.org/organization/348.html) 中联系群主/管理员即可.
 
 ## 下载
 
