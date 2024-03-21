@@ -42,6 +42,20 @@ const append = (list1, list2) =>
 // 本质上 pair 是 function, 因此需要转成 string 才能判断相等
 const assert_eq = (a, b) => assert(to_string(a) === to_string(b));
 
+const map = (func, items) => {
+	return items === null
+		? null
+		: pair(func(head(items)), map(func, tail(items)));
+};
+
+const for_each = (func, items) => {
+	if (items === null) {
+		return null;
+	}
+	func(head(items));
+	return for_each(func, tail(items));
+};
+
 module.exports = {
 	pair,
 	head,
@@ -54,4 +68,6 @@ module.exports = {
 	length,
 	append,
 	assert_eq,
+	map,
+	for_each,
 };
