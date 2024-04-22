@@ -1,7 +1,9 @@
 const assert = require("assert");
 function pair(x, y) {
-	return (m) =>
+	const p = (m) =>
 		m === 0 ? x : m === 1 ? y : error(m, "argument not 0 or 1 – pair");
+	p.isPair = true;
+	return p;
 }
 function head(iter) {
 	return iter(0);
@@ -11,7 +13,10 @@ function tail(iter) {
 }
 function is_pair(z) {
 	// 书中未给出具体实现。
-	return typeof z === "function";
+	return typeof z === "function" && z.isPair === true;
+}
+function is_null(z) {
+	return z === null;
 }
 function to_string(z) {
 	if (z === null) return "null";
@@ -48,6 +53,14 @@ const map = (func, items) => {
 		: pair(func(head(items)), map(func, tail(items)));
 };
 
+const filter = (func, items) => {
+	return items === null
+		? null
+		: func(head(items))
+		? pair(head(items), filter(func, tail(items)))
+		: filter(func, tail(items));
+};
+
 const for_each = (func, items) => {
 	if (items === null) {
 		return null;
@@ -61,6 +74,7 @@ module.exports = {
 	head,
 	tail,
 	is_pair,
+	is_null,
 	to_string,
 	print,
 	list,
@@ -68,6 +82,7 @@ module.exports = {
 	length,
 	append,
 	assert_eq,
+	filter,
 	map,
 	for_each,
 };
