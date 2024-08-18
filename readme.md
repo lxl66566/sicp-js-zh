@@ -22,8 +22,8 @@
 
 ## 代码
 
-[src](./src/) 中包含了一些我的课后习题。U = Uncomplete, W = Wrong。
+[src](./src/) 中包含了一些我的课后习题。U = Uncomplete, W = Wrong, Q = Question。
 
 我本来看 js 是因为不喜欢 lisp。但是后来因为[一些契机](https://absx.pages.dev/coding/clojure.html)学了 clojure，所以后面也就用 clojure 做了。
 
-阅读进度：https://sourceacademy.org/sicpjs/2.2.3#ex-2.34
+阅读进度：https://sourceacademy.org/sicpjs/2.2.4#h4
